@@ -1,0 +1,58 @@
+# Clink colors: Catppuccin Macchiato
+# 形式: sgr 38;2;R;G;B（24bit カラー / Windows Terminal 対応）
+
+# --- コマンド -------------------------------------------------------------
+# cmd.exe 組み込みコマンド (cd, dir, set, echo ...)   : Mauve  #c6a0f6
+color.cmd = sgr 38;2;198;160;246
+# 実行ファイル (git, nvim, python ...)                  : Blue   #8aadf4
+color.executable = sgr 38;2;138;173;244
+# argmatcher 登録済みのコマンド                        : Blue   #8aadf4
+color.argmatcher = sgr 38;2;138;173;244
+# doskey エイリアス                                     : Teal   #8bd5ca
+color.doskey = sgr 38;2;139;213;202
+# 見つからないコマンド                                  : Red    #ed8796
+color.unrecognized = sgr 38;2;237;135;150
+
+# --- 引数 -----------------------------------------------------------------
+# 入力テキスト全般                                      : Text   #cad3f5
+color.input = sgr 38;2;202;211;245
+# argmatcher が認識した引数                             : Green  #a6da95
+color.arg = sgr 38;2;166;218;149
+# フラグ (-x, --long, /x)                               : Peach  #f5a97f
+color.flag = sgr 38;2;245;169;127
+# 想定外の引数                                          : Maroon #ee99a0
+color.unexpected = sgr 38;2;238;153;160
+# 引数の補足情報                                        : Yellow #eed49f
+color.arginfo = sgr 38;2;238;212;159
+
+# --- 記号 -----------------------------------------------------------------
+# コマンド区切り (&, &&, ||, |)                         : Sky    #91d7e3
+color.cmdsep = sgr 38;2;145;215;227
+# リダイレクト (>, >>, <, 2>&1)                         : Sky    #91d7e3
+color.cmdredir = sgr 38;2;145;215;227
+# 履歴展開 (!!, !$ など)                                : Yellow #eed49f
+color.histexpand = sgr 38;2;238;212;159
+
+# --- 補完・候補 -----------------------------------------------------------
+# 自動サジェスト（ゴーストテキスト）                    : Overlay0 #6e738d
+color.suggestion = sgr 38;2;110;115;141
+# 補完候補の説明文                                      : Overlay2 #939ab7
+color.description = sgr 38;2;147;154;183
+# 補完リストのフィルタ結果                              : Text   #cad3f5
+color.filtered = sgr 38;2;202;211;245
+# 隠しファイル                                          : Overlay1 #8087a2
+color.hidden = sgr 38;2;128;135;162
+# 読み取り専用ファイル                                  : Yellow #eed49f
+color.readonly = sgr 38;2;238;212;159
+# 補完リストのコメント行                                : Subtext0 #a5adcb
+color.comment_row = sgr 38;2;165;173;203
+
+# --- その他 ---------------------------------------------------------------
+# 対話プロンプト（"Display all N possibilities?" など）  : Mauve  #c6a0f6
+color.interact = sgr 38;2;198;160;246
+# メッセージ領域                                        : Lavender #b7bdf8
+color.message = sgr 38;2;183;189;248
+# 履歴編集済みマーク (*)                                : Pink   #f5bde6
+color.modmark = sgr 38;2;245;189;230
+# 横スクロールマーカー (< >)                            : Overlay1 #8087a2
+color.horizscroll = sgr 38;2;128;135;162
